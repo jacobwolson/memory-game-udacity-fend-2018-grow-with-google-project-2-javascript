@@ -43,8 +43,9 @@ cardsArray.forEach(function(x) {
 
 /*
  * Set deck height equal to deck width. Size ratio of cards will follow suite.
- * Relevant for screen sizes smaller than 700px, where `deckWidth` is
- * relative to window size.
+ * The event handler here becomes relelavant when the window is resized to a width of
+ * 700 px or less -- the point at which the deck container and deck start being sized
+ * relative to the window width: see media queries in `app.css` for more details.
  * Method inpsired by post at https://stackoverflow.com/questions/5445491/height-equal-to-dynamic-width-css-fluid-layout
  * by user "Hussein".
  */
